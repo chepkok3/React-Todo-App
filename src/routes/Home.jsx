@@ -1,4 +1,3 @@
-import '@/styles/TodoApp.css';
 import TodosHeader from '../components/Header';
 import TodosLogic from '../components/TodosLogic';
 
