@@ -1,0 +1,18 @@
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 1rem;
+  max-width: 85em;
+  margin: auto;
+}
+
+.nav-links a {
+  display: inline-block;
+  padding: 1.5rem 0.5rem;
+  transition: color 150ms ease-in-out;
+}
+
+.nav-links a:hover {
+  color: red;
+}

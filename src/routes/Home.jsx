@@ -1,4 +1,5 @@
-import TodosHeader from '../components/Header';
+import '@/styles/TodoApp.css';
+import TodosHeader from '../components/TodosHeader';
 import TodosLogic from '../components/TodosLogic';
 
 const Home = () => (
