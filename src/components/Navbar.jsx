@@ -1,5 +1,4 @@
 import { NavLink } from 'react-router-dom';
-import '../styles/Navbar.css';
 
 const links = [
   { path: 'React-Todo-App/', text: 'Home' },
