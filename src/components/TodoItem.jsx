@@ -2,6 +2,7 @@ import { useState, useRef } from 'react';
 import { HiOutlineTrash } from 'react-icons/hi';
 import { BiEditAlt } from 'react-icons/bi';
 import PropTypes from 'prop-types';
+import styles from '../styles/TodoItem.module.css';
 import { useTodosStore } from '../store';
 
 const TodoItem = ({ itemProp }) => {
@@ -38,8 +39,8 @@ const TodoItem = ({ itemProp }) => {
   };
 
   return (
-    <li style={itemProp.completed ? { opacity: 0.4 } : null}>
-      <div style={viewMode}>
+    <li className={styles.item} style={itemProp.completed ? { opacity: 0.4 } : null}>
+      <div className={styles.content} style={viewMode}>
         <input
           type="checkbox"
           checked={itemProp.completed}
@@ -48,14 +49,13 @@ const TodoItem = ({ itemProp }) => {
         <button type="button" onClick={handleEditing}>
           <BiEditAlt />
         </button>
-        <button type="button" onClick={() => delTodo(itemProp.id)}>
+        <button type="button" className={styles.delete} onClick={() => delTodo(itemProp.id)}>
           <HiOutlineTrash />
         </button>
-        <span style={itemProp.completed ? completedStyle : null}>
-          {itemProp.title}
-        </span>
+        <span style={itemProp.completed ? completedStyle : null}>{itemProp.title}</span>
       </div>
       <input
+        className={styles.textInput}
         style={editMode}
         ref={editInputRef}
         defaultValue={itemProp.title}

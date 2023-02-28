@@ -1,3 +1,5 @@
+import styles from '../styles/TodosHeader.module.css';
+
 const TodosHeader = () => {
   const headerStyle = {
     padding: '20px 0',
@@ -7,7 +9,7 @@ const TodosHeader = () => {
   };
 
   return (
-    <header style={headerStyle}>
+    <header style={headerStyle} className={styles.header}>
       <h1>todos</h1>
       <p>Items will persist in the browser local storage</p>
     </header>
