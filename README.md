@@ -56,7 +56,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Visit [live demo](http://127.0.0.1:5175/React-Todo-App/)
+- Visit [live demo](http://127.0.0.1:5174/React-Todo-App/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
