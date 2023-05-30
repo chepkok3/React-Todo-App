@@ -2,7 +2,7 @@
 
 <div>
 
-  <h1><b>React Todo App </b></h1><br/><br/>
+                                             <h1><b>React Todo App </b></h1><br/><br/>
 
 </div>
 
